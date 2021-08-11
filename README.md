@@ -23,6 +23,10 @@
 
 </div>
 
+## What is this?
+
+This is a new placeholder website for [Silkky.Cloud](https://www.silkky.cloud/) with the same style as [our new website](https://demo.silkky.cloud) but with less content. Kind of a ***just for now*** website.
+
 ## Contributing
 
 **Important:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)

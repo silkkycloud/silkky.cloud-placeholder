@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://silkky.cloud/">
-  <img src="public/assets/img/png/brand/text-background.png" width="600px" alt="Silkky.Cloud" />
+  <img src="public/img/png/brand/text-background.png" width="600px" alt="Silkky.Cloud" />
 </a>
 <p>
   <em>Protect your information and anonymity against global surveillance.</em>
@@ -80,5 +80,5 @@ Static files (Copies files from 'node_modules' and 'public')
 **Thanks to JetBrains for supporting this project by providing free licenses for their development tools.**
 
 <a href="https://jb.gg/OpenSource" target="_blank">
-  <img src="public/assets/img/svg/jetbrains.svg" width="120px" alt="JetBrains">
+  <img src="public/img/svg/jetbrains.svg" width="120px" alt="JetBrains">
 </a>

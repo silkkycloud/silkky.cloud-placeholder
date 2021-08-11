@@ -1,0 +1,5 @@
+dist
+
+# IDE project directories
+.idea
+.vscode

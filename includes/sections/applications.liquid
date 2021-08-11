@@ -1,0 +1,83 @@
+<div class="container-md px-5 py-5">
+    <div class="row gx-5 mb-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <div class="text-center text-white">
+                <h1 class="fw-bolder">Applications</h1>
+                <p>Web applications to help protect your privacy</p>
+            </div>
+        </div>
+    </div>
+    <!--Applications-->
+    <div class="row gx-5">
+        <!--Info bar-->
+        {% render 'includes/dynamic/info' %}
+        <!--App cards-->
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    unstable: true,
+                    unstable_reason: "Some search engines are blocking requests :(",
+                    app_title: "Searx",
+                    app_description: "Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.",
+                    app_url: "https://searx.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    unstable: true,
+                    unstable_reason: "YouTube is completely blocking videos from playing :(",
+                    app_title: "Invidious",
+                    app_description: "Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.",
+                    app_url: "https://invidious.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Send",
+                    app_description: "Simple, private file sharing. Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.",
+                    app_url: "https://send.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Vikunja",
+                    app_description: "The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.",
+                    app_url: "https://tasks.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Bitwarden",
+                    app_description: "Bitwarden offers the easiest and safest way for teams and individuals to store and share sensitive data from any device. Your private information is protected with end-to-end encryption before it ever leaves your device.",
+                    app_url: "https://vault.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Libreddit",
+                    app_description: "Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.",
+                    app_url: "https://libreddit.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Nitter",
+                    app_description: "Nitter is a alternative Twitter front-end focused on privacy.",
+                    app_url: "https://nitter.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Whoogle",
+                    app_description: "Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Great alternative to Searx if you like the 'Google' look.",
+                    app_url: "https://whoogle.silkky.cloud"
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                    app_title: "Privatebin",
+                    app_description: "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.",
+                    app_url: "https://privatebin.silkky.cloud"
+            %}
+        </div>
+    </div>
+</div>

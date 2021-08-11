@@ -141,7 +141,7 @@ footer {
 }
 
 #sponsors {
-  #jetbrains-sponsor {
+  #sponsor {
     &:hover {
       opacity: 85%;
     }
@@ -158,5 +158,13 @@ footer {
     &:hover {
       opacity: 85%;
     }
+  }
+}
+
+#app {
+  border: 1.5px solid $dark;
+
+  &:hover {
+    border: 1.5px solid #ffffff;
   }
 }

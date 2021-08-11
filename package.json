@@ -1,0 +1,62 @@
+{
+  "name": "silkky.cloud-placeholder",
+  "version": "0.1.0",
+  "description": "The Silkky.Cloud website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "build": "npm-run-all static css liquid",
+    "static": "npm-run-all static-public static-node",
+    "static-public": "shx cp -r public/. dist",
+    "static-node": "npm-run-all static-node-bootstrap static-node-popperjs static-node-bootstrap-icons static-node-forkawesome-icons static-node-fontsource",
+    "static-node-bootstrap": "shx mkdir -p dist/js && shx cp -r node_modules/bootstrap/dist/js/bootstrap.min.js dist/js/bootstrap.min.js && shx cp -r node_modules/bootstrap/dist/js/bootstrap.min.js.map dist/js/bootstrap.min.js.map",
+    "static-node-popperjs": "shx mkdir -p dist/js && shx cp -r node_modules/@popperjs/core/dist/umd/popper.min.js dist/js/popper.min.js && shx cp -r node_modules/@popperjs/core/dist/umd/popper.min.js.map dist/js/popper.min.js.map",
+    "static-node-bootstrap-icons": "shx mkdir -p dist/icons/bootstrap-icons && shx cp -r node_modules/bootstrap-icons/font/. dist/icons/bootstrap-icons",
+    "static-node-forkawesome-icons": "shx mkdir -p dist/icons/forkawesome && shx cp -r node_modules/fork-awesome/. dist/icons/forkawesome",
+    "static-node-fontsource": "shx mkdir -p dist/css/files && shx cp -r node_modules/@fontsource/bebas-neue/files/. dist/css/files && shx cp -r node_modules/@fontsource/source-code-pro/files/. dist/css/files",
+    "css": "shx mkdir -p dist/css && npm-run-all css-compile css-prefix css-minify",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/styles.scss:dist/css/styles.css",
+    "css-prefix": "postcss dist/css/styles.css --output dist/css/styles.css",
+    "css-minify": "cleancss dist/css/styles.css --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/styles.css",
+    "liquid": "node liquid.js"
+  },
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silkkycloud/silkky.cloud-placeholder"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Silkky.Cloud",
+  "bugs": {
+    "url": "https://github.com/silkkycloud/silkky.cloud-placeholder/issues"
+  },
+  "homepage": "https://www.silkky.cloud/",
+  "dependencies": {
+    "@fontsource/bebas-neue": "^4.5.0",
+    "@fontsource/source-code-pro": "^4.5.0",
+    "@popperjs/core": "^2.9.3",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0",
+    "clean-css": "^5.1.5",
+    "clean-css-cli": "^5.3.3",
+    "fork-awesome": "^1.1.7",
+    "liquidjs": "^9.25.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.37.5",
+    "shelljs": "^0.8.4",
+    "shx": "^0.3.3"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "express": "^4.17.1",
+    "graceful-fs": "^4.2.8",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.12",
+    "upath": "^2.0.1"
+  }
+}

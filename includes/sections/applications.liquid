@@ -10,7 +10,11 @@
     <!--Applications-->
     <div class="row gx-5">
         <!--Info bar-->
-        {% render 'includes/dynamic/info' %}
+        {% render 'includes/dynamic/info',
+            info: false,
+            info_title: "title",
+            info_description: "description"
+        %}
         <!--App cards-->
         <div class="col-lg-4 mb-5">
             {% render 'includes/dynamic/app',

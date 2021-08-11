@@ -8,7 +8,7 @@
 
 **This is the current Silkky.Cloud website**
 
-[![Deploy to Netlify](https://github.com/silkkycloud/silkky.cloud/actions/workflows/production.yml/badge.svg)](https://demo.silkky.cloud/)
+[![Deploy to Netlify](https://github.com/silkkycloud/silkky.cloud-placeholder/actions/workflows/production.yml/badge.svg)](https://demo.silkky.cloud/)
 
 <a href="https://liberapay.com/silkkycloud/donate" target="_blank">
   <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="30px">

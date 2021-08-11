@@ -25,7 +25,7 @@
 
 ## What is this?
 
-This is a new placeholder website for [Silkky.Cloud](https://www.silkky.cloud/) with the same style as [our new website](https://demo.silkky.cloud) but with less content. Kind of a ***just for now*** website.
+This is a new placeholder website for [Silkky.Cloud](https://www.silkky.cloud/) with the same style as [our new website](https://demo.silkky.cloud) but with less content. Kind of a ***just for now*** website, if that makes sense :)
 
 ## Contributing
 

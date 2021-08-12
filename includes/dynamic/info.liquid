@@ -17,6 +17,11 @@
                         Description
                     {% endif %}
                 </p>
+                {% if info_link %}
+                <a class="link-light" href="{{ info_link }}" target="_blanks">
+                    {{ info_link_text }}
+                </a>
+                {% endif %}
             </div>
         </div>
     </div>

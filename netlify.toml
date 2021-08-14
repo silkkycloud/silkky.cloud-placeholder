@@ -1,2 +1,8 @@
 [build]
-publish = "dist"
+    publish = "dist"
+
+# Block Google FLoC
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Permissions-Policy = "interest-cohort=()"

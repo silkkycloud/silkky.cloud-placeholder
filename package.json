@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index.js",
-    "build": "npm-run-all static css liquid",
+    "build": "npm-run-all static css html",
     "static": "npm-run-all static-public static-node",
     "static-public": "shx cp -r public/. dist",
     "static-node": "npm-run-all static-node-bootstrap static-node-popperjs static-node-bootstrap-icons static-node-forkawesome-icons static-node-fontsource",
@@ -18,7 +18,7 @@
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/styles.scss:dist/css/styles.css",
     "css-prefix": "postcss dist/css/styles.css --output dist/css/styles.css",
     "css-minify": "cleancss dist/css/styles.css --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/styles.css",
-    "liquid": "node liquid.js"
+    "html": "node html.js"
   },
   "license": "AGPL-3.0-or-later",
   "repository": {

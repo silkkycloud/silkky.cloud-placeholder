@@ -1,9 +1,9 @@
 {% if info == true %}
 <div class="mb-5">
-    <div class="border border-1 {% if danger == true %}border-danger{% else %}border-warning{% endif %}">
+    <div class="border border-1 {% if danger == true %}border-danger{% endif %}">
         <div class="bg-alt-color card h-100 text-center" id="info">
             <div class="card-body">
-                <h4 class="card-title">
+                <h4 class="fw-bold fs-5 card-title">
                     {% if info_title %}
                         {{ info_title }}
                     {% else %}

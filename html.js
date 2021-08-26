@@ -7,12 +7,8 @@ const engine = new Html({
     extname: '.liquid'
 });
 
-function renderHtml() {
-    readdirSync(upath.resolve(__dirname, './pages')).forEach(file => {
-        engine.renderFile(upath.resolve(__dirname, `./pages/${file}`)).then(html => {
-            writeFileSync(upath.resolve(__dirname, `./dist/${file.replace('.liquid', '.html')}`), html);
-        });
+readdirSync(upath.resolve(__dirname, './pages')).forEach(file => {
+    engine.renderFile(upath.resolve(__dirname, `./pages/${file}`)).then(html => {
+        writeFileSync(upath.resolve(__dirname, `./dist/${file.replace('.liquid', '.html')}`), html);
     });
-}
-
-renderHtml();
+});

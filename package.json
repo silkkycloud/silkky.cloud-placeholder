@@ -36,7 +36,7 @@
   "dependencies": {
     "@fontsource/bebas-neue": "^4.5.0",
     "@fontsource/source-code-pro": "^4.5.0",
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.10.1",
     "autoprefixer": "^10.3.3",
     "bootstrap": "^5.1.0",
     "bootstrap-icons": "^1.5.0",

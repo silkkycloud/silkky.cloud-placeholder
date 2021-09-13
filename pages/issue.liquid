@@ -1,0 +1,10 @@
+{% layout 'layouts/default' %}
+{% assign page = "issue" %}
+{% assign page_title = "Report" %}
+{% assign page_description = "Report a Issue." %}
+{% block content %}
+<!--Issue Form-->
+<section class="my-5" id="issue">
+    {% render 'includes/sections/report' %}
+</section>
+{% endblock %}

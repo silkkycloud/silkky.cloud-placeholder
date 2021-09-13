@@ -1,18 +1,27 @@
-<form name="issues" method="post" data-netlify="true">
+<form class="needs-validation" name="issues" method="post" data-netlify="true" novalidate>
     <!--Email Address-->
     <div class="form-floating mb-3">
-        <input type="email" class="form-control" name="email" id="issueInputEmail" placeholder="name@example.com">
+        <input type="email" class="form-control" name="email" id="issueInputEmail" placeholder="name@example.com" required>
         <label for="issueInputEmail">Email address</label>
+        <div class="invalid-feedback">
+            Please enter a email address.
+        </div>
     </div>
     <!--Name-->
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="name" id="issueInputName" placeholder="John Doe">
+        <input type="text" class="form-control" name="name" id="issueInputName" placeholder="John Doe" required>
         <label for="issueInputName">Name</label>
+        <div class="invalid-feedback">
+            Please enter a name.
+        </div>
     </div>
     <!--Description-->
     <div class="mb-3">
         <label class="text-white mb-2" for="issueTextArea">Description</label>
-        <textarea class="form-control" name="description" id="issueTextArea" rows="3"></textarea>
+        <textarea class="form-control" name="description" id="issueTextArea" rows="3" required></textarea>
+        <div class="invalid-feedback">
+            Please enter a description of your issue.
+        </div>
     </div>
     <!--Submit-->
     <button type="submit" class="btn btn-cool text-white">

@@ -35,7 +35,9 @@
     {% endblock %}
 </main>
 {% render 'includes/footer' %}
-{% render 'includes/scripts' %}
+{% render 'includes/scripts',
+        page: page
+%}
 </body>
 </html>
 

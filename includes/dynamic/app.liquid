@@ -4,7 +4,7 @@
             <b>Status: </b> {% if unstable == true %}unstable{% else %}stable{% endif %}
         </div>
         <div class="card-body">
-            <a class="text-decoration-none link-light stretched-link" href="{% if app_url %}{{ app_url }}{% else %}/{% endif %}" target="_blank">
+            <a rel="noreferrer" class="text-decoration-none link-light stretched-link" href="{% if app_url %}{{ app_url }}{% else %}/{% endif %}" target="_blank">
                 <h3 class="card-title">
                     {% if app_title %}
                         {{ app_title }}
